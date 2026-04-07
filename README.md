@@ -9,23 +9,24 @@ npm run dev
 
 ## Challenge
 
-Implement a functional carousel inside `src/Carousel.jsx`.
+Build an image carousel from scratch.
 
-The component already receives an array of `slides` via props. Each slide has `id`, `title`, `description` and `color`.
+The app currently renders a simple `<h1>Hello World</h1>`. Your job is to replace it with a fully functional carousel component.
 
-The CSS and data are ready. You only need to write the logic.
+Slide data is available in `src/data.js`. Each slide has `id`, `title`, `description` and `image` (a public URL).
 
 ## Rules
 
-1. Display one slide at a time using its `title`, `description` and `color` as background.
-2. Add **Previous** and **Next** buttons.
-3. **Previous** must be disabled on the first slide.
-4. **Next** must be disabled on the last slide.
-5. Do not use external libraries.
-6. Work only inside `src/Carousel.jsx`.
+1. Create your carousel component(s) inside `src/`.
+2. Import and use the `slides` array from `src/data.js`.
+3. Wire your carousel into `src/App.jsx` so it renders instead of the Hello World heading.
+4. Display one slide at a time showing its **image**, **title** and **description**.
+5. Add **Previous** and **Next** navigation buttons.
+6. Do not use external carousel libraries.
+7. Style the component however you see fit (CSS, inline styles or CSS modules are all fine).
 
 ## Evaluation
 
-- Correct use of React state (`useState`).
-- Proper conditional rendering and disabling of buttons.
-- Clean, readable code.
+- Correct use of React state and event handling.
+- Clean, readable, well-structured code.
+- Visual result and attention to detail.
